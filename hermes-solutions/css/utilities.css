@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #b85757;
+  --secondary-color: #ff8b8b;
+  --navbar-color: #7090cb;
+  --dark-color: rgb(27, 26, 26);
+  --underscore-color: rgb(191, 120, 194);
+  --light-color: #fff;
+  --bg-color: #ede2e2;
+}
+/* Text colors */
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+/* Button properties and color */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 6px;
+  border-radius: 7px;
+  font-size: 18px;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+.btn-dark {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+.btn-light {
+  background-color: var(--light-color);
+}
+.btn-outline {
+  background: transparent;
+  border: 2px solid #fff;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.hero * {
+  z-index: 10;
+}
+/* Flex items*/
+.flex-items{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: center;
+height: 100%;
+}

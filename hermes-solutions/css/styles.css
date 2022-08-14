@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", "sans-serif";
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: var(--bg-color);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px;
+  background-color: var(--navbar-color);
+  height: 70px;
+  opacity: 92;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  margin: 0px 10px;
+  justify-content: first baseline;
+}
+.navbar a {
+  text-transform: capitalize;
+  padding: 5px 20px;
+  margin: 0;
+  color: var(--light-color);
+  font-size: 18px;
+  font-weight: bolder;
+  transition: color 0.4s;
+}
+.navbar a:hover {
+  border-bottom: 2px solid var(--underscore-color);
+  color: var(--secondary-color);
+}
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url("../images/home/coffee-1974841_960_720.jpg") no-repeat center
+    center/cover;
+  position: relative;
+  color: var(--light-color);
+}
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+.hero .content h1 {
+  font-size: 55px;
+  font-weight: 500;
+}
+.hero .content p {
+  font-size: 24px;
+  max-width: 600;
+  margin: 20px 0 30px;
+}
+/* Icons */
+.icons {
+  padding: 30px;
+}
+.icons i {
+  background: var(--primary-color);
+  color: var(--bg-color);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  width: 4.5rem;
+  height: 4rem;
+  text-align: center;
+}
+.icons h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+/* Footer Section */
+footer{
+  background-color: #333;
+  margin-top: 20px;
+  padding: 50px;
+}
+.footer-list{
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+.footer-link{
+  color: var(--light-color);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.footer-link:hover{
+  color: var(--secondary-color);
+}
